@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado De Personas</title>
+    <link href="css/estilos.css" rel="stylesheet"/>
+</head>
+<!--Llamamos a la funcion mostrarPersona para que muestre la lista de personas cada vez que se carga la pagina(con ayuda de onload)-->
+<body onload="mostrarPersonas()">
+    <div class="contenedor" id="cabecero"/>
+    <h1>Listado De Personas</h1>
+</div>
+<div class="contenedor">
+    <div class="elemento">
+        <ul id="personas">
+           <!-- <li>Juan Bautista</li>-->
+        </ul>
+    </div>
+</div>
+
+<div class="contenedor">
+    <div style="text-align: center;">
+    <button style="cursor: pointer" onclick="agregarPersona()">+</button>
+    </div>
+    <form id="forma">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="apellido" placeholder="Apellido">
+    </form>
+</div>
+
+<!--Uno este archivo con los archivos js con script y src-->
+<script src="js/persona.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
